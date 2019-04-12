@@ -7,3 +7,4 @@ class Project(models.Model):
     short_description = models.CharField(max_length=255, default='Need Short Description')
     description = models.CharField(max_length=8000)
     created = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=1)
