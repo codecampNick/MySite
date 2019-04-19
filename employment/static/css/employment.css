@@ -1,3 +1,37 @@
+#employment-home{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 2;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border: solid 3px black;
+    grid-template-areas:
+        "emp-header-name emp-header-accomp emp-header-description"
+        "emp-details emp-accomp emp-details";
+    background-color: gray;
+}
+/*header styling*/
+.emp-header{
+    color: white;
+}
+.emp-header-name{
+    grid-area: header-name;
+}
+
+.emp-header-accomp{
+    grid-area: header-accomp;
+}
+
+.emp-header-description{
+    grid-area: header-description;
+}
+
 .test{
-    color: red;
+    background-color: blue;
+}
+
+/*body styling*/
+.emp-details{
+    background-color: red;
+    grid-area: emp-details;
 }
