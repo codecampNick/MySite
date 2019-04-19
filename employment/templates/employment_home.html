@@ -13,7 +13,7 @@
         <div class="header-description">Description</div>
         {% for employer in employers %}
         <div class="holder1">
-            <span>{{ employer.name }}</span><br />
+            <span><a href="employment/{{ employer.name|slugify|lower     }}">{{ employer.name }}</a></span><br />
             <span>{{ employer.type }}</span><br />
             <span>{{ employer.start_date|date:'F Y' }} | {% if employer.end_date == '' or employer.end_date == none  %}
                                                             Current
@@ -30,7 +30,11 @@
             <ul>
                 {% for accomp in accomplishments %}
                     {% if accomp.company_name|stringformat:"s" == employer.name %}
-                        <li><span style="color:red; background-color: black">{{ accomp.title }}</span></li>
+                        <li><span style="color:red; background-color: black">{{ accomp.title }}</span>
+                            <ul>
+                                <li>{{ accomp.description }}</li>
+                            </ul>
+                        </li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -38,18 +42,6 @@
         <div class="holder3" style="background-color: brown">{{ employer.company_description }}</div>
         {% endfor %}
     </div>
-    <!--{% for employer in employers %}
-        <div class="row employer-even">
-            <div class="col-lg-3" style="color: red; font-size: 20">{{ employer.name }}</div>
-            <div class="col-lg-3" style="color: blue; font-size: 14">Type: {{ employer.type }}</div>
-            <div class="col-lg-6">{{ employer.start_date|date:'F Y' }} |
-                {% if employer.end_date == '' or employer.end_date == none  %}
-                    Current
-                {% else %}
-                    {{ employer.end_date|date:'M F' }} |</div>
-                {% endif %}
-        </div>
-    {% endfor %}-->
 {% endblock main_content %}
 
 {% block js %}

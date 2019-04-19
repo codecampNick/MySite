@@ -18,6 +18,7 @@ class Accomplishments(models.Model):
     title = models.CharField(max_length=100)
     description = models.CharField(max_length=255)
     company_name = models.ForeignKey(Company, on_delete=models.PROTECT)
+    rank = models.SmallIntegerField()
 
 
 class Responsibilities(models.Model):
