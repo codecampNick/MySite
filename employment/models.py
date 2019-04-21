@@ -3,6 +3,7 @@ from django.db import models
 
 class Company(models.Model):
     name = models.CharField(max_length=255)
+    title = models.CharField(max_length=100)
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
     city = models.CharField(max_length=255)

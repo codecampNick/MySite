@@ -1,0 +1,17 @@
+.test{
+    color: red;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.nav-custom{
+    background-color: blue;
+}
+
+.main-content{
+    margin-top: 60px;
+}

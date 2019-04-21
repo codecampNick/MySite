@@ -32,7 +32,7 @@ def diceholdings(request):
 
 
 def ontargetjobs(request):
-    return render(request, 'otj.html',
+    return render(request, 'ontargetjobs.html',
                   {
                       'title': 'Ontargetjobs Details',
                   })

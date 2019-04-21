@@ -31,7 +31,13 @@
 }
 
 /*body styling*/
-.emp-details{
-    background-color: red;
-    grid-area: emp-details;
+.emp-base{
+    padding: 10px;
+}
+.holder-details{
+     background-color: brown;
+}
+
+.holder-desc{
+    background-color: blue;
 }
