@@ -30,3 +30,9 @@ def diceholdings(request):
                       'title': 'Dice Holdings Details'
                   })
 
+
+def ontargetjobs(request):
+    return render(request, 'otj.html',
+                  {
+                      'title': 'Ontargetjobs Details',
+                  })
