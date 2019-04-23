@@ -1,7 +1,25 @@
 {% extends 'base.html' %}
-
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'css/languages.css' %}" />
+{% endblock css %}
 {% block title %} {{ title }} {% endblock title %}
 {% block nav_bar_languages %} active{% endblock nav_bar_languages %}
+{% load languages_filters %}
 {% block main_content %}
-    <h1>Languages Home - Extended</h1>
+    <h1>Languages Home</h1>
+    <ul>
+        {% for lang in langs %}
+            <li>{{ lang.name }} <span class="lang-rating-value stars-outer"><span class="stars-inner" style="width: {{ star_value|get_item:lang.name }}%" data="{{ lang.experience_level }}"></span></span></li>
+        {% endfor %}
+    </ul>
+    <!--<div class="star-container">
+        <div class="stars-outer">
+            <div class="stars-inner"></div>
+        </div>
+    </div>-->
 {% endblock main_content %}
+{% block js %}
+    <script type="text/javascript" src="{% static 'js/languages.js' %}"></script>
+{% endblock js %}
