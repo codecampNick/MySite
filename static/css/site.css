@@ -1,11 +1,13 @@
-.test{
-    color: red;
+body{
+    background: url("../images/sunset.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .navbar{
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 100;
 }
 
 .nav-custom{
@@ -14,4 +16,17 @@
 
 .main-content{
     margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    color: black;
+    background-color: white;
+    opacity: .9;
+    padding: 20px;
+    margin-top: 20px;
 }

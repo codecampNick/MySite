@@ -1,4 +1,26 @@
-#employment-home{
+body{
+    background-color: white;
+}
+h1{
+    color: rgba(217, 183, 176);
+}
+
+a{
+    color: rgba(144, 47, 26);
+    /*text-shadow: -.5px 0 black, 0 1px black, 1px 0 black, 0 -.5px black;*/
+}
+
+a:hover{
+    color: rgba(190, 175, 172);
+}
+
+.odd{
+    background-color: rgba(218, 204, 201);
+}
+.even{
+    background-color: rgba(217, 183, 176);
+}
+/*#employment-home{
     display: grid;
     grid-template-columns: auto 1fr 1fr;
     grid-template-rows: 2;
@@ -7,13 +29,27 @@
     border: solid 3px black;
     grid-template-areas:
         "emp-header-name emp-header-accomp emp-header-description"
-        "emp-details emp-accomp emp-details";
+        "emp-details emp-accomp emp-description";
     background-color: gray;
-}
+}*/
 /*header styling*/
 .emp-header{
     color: white;
+    font-size: 25px;
+    background-color: rgba(220, 141, 124);
+    border: black solid 3px;
+    border-radius: 5px;
 }
+.emp-body{
+    border-top: black solid 1.5px;
+    border-right: black solid 3px;
+    border-bottom: black solid 1.5px;
+    border-left: black solid 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/*
 .emp-header-name{
     grid-area: header-name;
 }
@@ -24,13 +60,14 @@
 
 .emp-header-description{
     grid-area: header-description;
-}
-
-.test{
-    background-color: blue;
-}
+}*/
 
 /*body styling*/
+/*.holder-container{
+    grid-area:
+    background-color: black;
+}
+
 .emp-base{
     padding: 10px;
 }
@@ -40,4 +77,4 @@
 
 .holder-desc{
     background-color: blue;
-}
+}*/
