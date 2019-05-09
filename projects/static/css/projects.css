@@ -1,4 +1,16 @@
 body{
     background: url("../images/hawaii.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card{
+    background: rgba(220,220,220,0.2);
+    border: white solid 1px;
+    margin: 15px;
+}
+
+.pro-card-text{
+    color: rgba(0,51,0,1);
 }

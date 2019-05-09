@@ -15,10 +15,10 @@ a:hover{
 }
 
 .odd{
-    background-color: rgba(218, 204, 201);
+    background-color: rgba(218, 204, 201, 0.3);
 }
 .even{
-    background-color: rgba(217, 183, 176);
+    background-color: rgba(217, 183, 176, 0.3);
 }
 /*#employment-home{
     display: grid;
@@ -36,7 +36,7 @@ a:hover{
 .emp-header{
     color: white;
     font-size: 25px;
-    background-color: rgba(220, 141, 124);
+    background-color: rgba(220, 141, 124, 0.5);
     border: black solid 3px;
     border-radius: 5px;
 }
