@@ -1,5 +1,6 @@
 body{
-    background-color: white;
+    background: url("../images/sunset.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 h1{
     color: rgba(217, 183, 176);
