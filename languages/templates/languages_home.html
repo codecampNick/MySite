@@ -11,18 +11,17 @@
     <h1>Languages Home</h1>
     <div class="lang-body">
         <div class="code">
+            def get_languages():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;return SELECT * FROM languages<br><br>
             loveToCode = true<br>
-            languages = GetLanguages('SELECT * FROM data base')<br>
-            if(loveToCode == true){<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(lang in languages){<br>
+            languages = get_languages()<br>
+            if loveToCode == true:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for lang in languages:<br>
                         {% for lang in langs %}
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ lang.name }} <span class="lang-rating-value stars-outer"><span class="stars-inner" style="width: {{ star_value|get_item:lang.name }}%" data="{{ lang.experience_level }}"></span></span><br>
                         {% endfor %}
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-            }<br>
-            else{<br>
+            else:<br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get another career......<br>
-            }
         </div>
 
     </div>
